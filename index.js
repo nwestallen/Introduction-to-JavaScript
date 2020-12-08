@@ -214,7 +214,7 @@ Using the annoyingSong function below do the following:
 
 function annoyingSong(count){
         while (count > 0) {
-          let precount = count
+          let precount = count;
           count -= 1;
           return precount + ' bottles of soda on the wall, ' + precount + ' bottles of soda, take one down pass it around ' + count + ' bottles of soda on the wall';
         }
@@ -238,22 +238,18 @@ Using the grade function below do the following:
   
 function grade(score){
     if (score >= 90) {
-      return 'you got an A'
+      return 'you got an A';
     } else if (score >= 80) {
-      return 'you got a B'
+      return 'you got a B';
     } else if (score >= 70) {
-      return 'you got a C'
+      return 'you got a C';
     } else if (score >= 60) {
-      return 'you got a D'
+      return 'you got a D';
     } else {
-      return 'you got an F'
+      return 'you got an F';
     }
   }
   
-  console.log('grade function', grade(85));
-  
-  
-
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
 
 //Vowel Counter - How many vowels are there?
@@ -267,8 +263,15 @@ Using the vowelCounter function below do the following:
 */
 
 
-function vowelCounter(/*add your code here*/) {
-    /*add your code here*/
+function vowelCounter(wordString) {
+    let vowelList = 'aAeEiIoOuU';
+    let vowelCount = 0;
+    for  (let i=0; i < wordString.length; i++) {
+      if (vowelList.includes(wordString[i])) {
+        vowelCount += 1;
+      }
+    }
+    return vowelCount;
 }
 
 

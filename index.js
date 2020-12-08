@@ -155,9 +155,18 @@ Use the game function below to do the following:
   
   HINT: Remember that the order in which we pass in our arguments matters when it comes to parameters
 */
+//let computer = Math.floor(Math.random() * 9) % 3
 
-function game(user, computer){
-    /*add your code here*/
+let rockMap = (hand) => {if(hand==='rock'){return 1;} else if(hand == 'paper'){return 2;} else{return 3;}}
+
+function game(user,computer){
+    if((rockMap(user) + 1) % 3 === rockMap(computer) % 3) {
+      return "you lose!"
+    } else if(rockMap(user) % 3 === (rockMap(computer) + 1) % 3) {
+      return "you win!"
+    } else {
+      return "it's a tie"
+    }
 }
   
   

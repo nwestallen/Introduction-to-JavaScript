@@ -18,7 +18,7 @@ Do the following:
 
    HINT: no function required
 */
-let votingAge = 28
+let votingAge = 28;
 if(votingAge >= 18) {
   true;
 } else {false;}
@@ -33,10 +33,12 @@ Do the following:
 
    HINT: no function required
 */
-let var1 = 4
-let var2 = 8
-
-
+let var1 = 4;
+let var2 = 8;
+if(var1 != var2){
+  var1 = var2
+}
+var1;
 /*
 Task 1c - Convert Strings to Numbers
 
@@ -47,9 +49,9 @@ Do the following:
 
    HINT: look up the Number method
 */
-let myYear = "1999"
-
-
+let myYear = "1999";
+myYear = Number(myYear);
+myYear;
 
 /*
 Task 1d - Multiply
@@ -109,7 +111,7 @@ Use the hungryDog function and feeding requirements below to do the following:
   NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
+function hungryDog(age,weight){
     /*add your code here*/
   }
 

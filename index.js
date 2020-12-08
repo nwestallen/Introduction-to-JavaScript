@@ -212,8 +212,12 @@ Using the annoyingSong function below do the following:
       "{number} bottles of soda on the wall, {number} bottles of soda, take one down pass it around {number left over} bottles of soda on the wall"
 */
 
-function annoyingSong(/*add your code here*/){
-        /*add your code here*/
+function annoyingSong(count){
+        while (count > 0) {
+          let precount = count
+          count -= 1;
+          return precount + ' bottles of soda on the wall, ' + precount + ' bottles of soda, take one down pass it around ' + count + ' bottles of soda on the wall';
+        }
   }
 
 
